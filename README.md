@@ -1,4 +1,9 @@
-# fslock
+# fslock-arti-fork
+
+> NOTE: This is a fork of the [`fslock`](https://docs.rs/crate/fslock/latest)
+> crate for use by Arti.  We are forking temporarily because we need
+> https://github.com/brunoczim/fslock/pull/15 in order to
+> implement file deletion safely.
 
 API to use files as a lock. Supports non-std crates by disabling feature
 `std`.
@@ -27,3 +32,5 @@ fn main() -> Result<(), fslock::Error> {
 # Docs on Master
 
 https://brunoczim.github.io/fslock/fslock
+
+[]

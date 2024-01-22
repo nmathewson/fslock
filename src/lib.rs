@@ -2,8 +2,14 @@
 
 //! **WARNING**: v0.1.x is incompatible with v0.2.x onwards.
 //!
+//! > NOTE: This is a fork of the [`fslock`](https://docs.rs/crate/fslock/latest)
+//! > crate for use by Arti.  We are forking temporarily because we need
+//! > https://github.com/brunoczim/fslock/pull/15 in order to
+//! > implement file deletion safely.
+//!
 //! API to use files as a lock. Supports non-std crates by disabling feature
 //! `std`.
+//!
 //!
 //! # Types
 //! Currently, only one type is provided: [`LockFile`]. It does not destroy the
@@ -13,6 +19,7 @@
 //!
 //! # Example
 //! ```
+//! # use fslock_arti_fork as fslock;
 //! use fslock::LockFile;
 //! fn main() -> Result<(), fslock::Error> {
 //!
@@ -57,6 +64,7 @@ pub use crate::{
 ///
 /// # Example
 /// ```
+/// # use fslock_arti_fork as fslock;
 /// # fn main() -> Result<(), fslock::Error> {
 /// use fslock::LockFile;
 ///
@@ -95,6 +103,7 @@ impl LockFile {
     /// # Example
     ///
     /// ```
+    /// # use fslock_arti_fork as fslock;
     /// # fn main() -> Result<(), fslock::Error> {
     /// use fslock::LockFile;
     ///
@@ -107,6 +116,7 @@ impl LockFile {
     /// # Panicking Example
     ///
     /// ```should_panic
+    /// # use fslock_arti_fork as fslock;
     /// # fn main() -> Result<(), fslock::Error> {
     /// use fslock::LockFile;
     ///
@@ -134,6 +144,7 @@ impl LockFile {
     /// # Example
     ///
     /// ```
+    /// # use fslock_arti_fork as fslock;
     /// # fn main() -> Result<(), fslock::Error> {
     /// use fslock::LockFile;
     ///
@@ -152,6 +163,7 @@ impl LockFile {
     /// # Panicking Example
     ///
     /// ```should_panic
+    /// # use fslock_arti_fork as fslock;
     /// # fn main() -> Result<(), fslock::Error> {
     /// use fslock::LockFile;
     ///
@@ -182,6 +194,7 @@ impl LockFile {
     /// # Example
     ///
     /// ```
+    /// # use fslock_arti_fork as fslock;
     /// # fn main() -> Result<(), fslock::Error> {
     /// use fslock::LockFile;
     /// # #[cfg(feature = "std")]
@@ -229,6 +242,7 @@ impl LockFile {
     /// # Example
     ///
     /// ```
+    /// # use fslock_arti_fork as fslock;
     /// # fn main() -> Result<(), fslock::Error> {
     /// use fslock::LockFile;
     ///
@@ -248,6 +262,7 @@ impl LockFile {
     /// # Panicking Example
     ///
     /// ```should_panic
+    /// # use fslock_arti_fork as fslock;
     /// # fn main() -> Result<(), fslock::Error> {
     /// use fslock::LockFile;
     ///
@@ -281,6 +296,7 @@ impl LockFile {
     /// # Example
     ///
     /// ```
+    /// # use fslock_arti_fork as fslock;
     /// # #[cfg(feature = "std")]
     /// # use std::fs::read_to_string;
     /// # fn main() -> Result<(), fslock::Error> {
@@ -309,6 +325,7 @@ impl LockFile {
     /// # Panicking Example
     ///
     /// ```should_panic
+    /// # use fslock_arti_fork as fslock;
     /// # fn main() -> Result<(), fslock::Error> {
     /// use fslock::LockFile;
     ///
@@ -338,6 +355,7 @@ impl LockFile {
     ///
     /// # Example
     /// ```
+    /// # use fslock_arti_fork as fslock;
     /// use fslock::LockFile;
     /// # fn main() -> Result<(), fslock::Error> {
     ///
@@ -371,6 +389,7 @@ impl LockFile {
     /// # Example
     ///
     /// ```
+    /// # use fslock_arti_fork as fslock;
     /// # fn main() -> Result<(), fslock::Error> {
     /// use fslock::LockFile;
     ///
@@ -389,6 +408,7 @@ impl LockFile {
     /// # Panicking Example
     ///
     /// ```should_panic
+    /// # use fslock_arti_fork as fslock;
     /// # fn main() -> Result<(), fslock::Error> {
     /// use fslock::LockFile;
     ///

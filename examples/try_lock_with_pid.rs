@@ -1,3 +1,5 @@
+use fslock_arti_fork as fslock;
+
 #[cfg(feature = "std")]
 use fslock::LockFile;
 #[cfg(feature = "std")]

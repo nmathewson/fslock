@@ -1,21 +1,15 @@
 [package]
-name = "fslock"
-version = "0.2.1"
-authors = ["brunoczim <brunoczim@gmail.com>"]
+name = "fslock-arti-fork"
+version = "0.2.0"
+authors = ["brunoczim <brunoczim@gmail.com>", "Nick Mathewson <nickm@torproject.org>"]
 edition = "2018"
-description = "A library to use files as locks"
-repository = "https://github.com/brunoczim/fslock"
+description = "A library to use files as locks, forked for use in Arti."
+repository = "https://github.com/nmathewson/fslock/"
 readme = "README.md"
 keywords = ["file", "lock", "lockfile", "filelock", "lock-file"]
 categories = ["filesystem", "no-std", "concurrency"]
 license = "MIT"
 
-[badges]
-maintenance = { status = "passively-maintained" }
-
-[badges.travis-ci]
-repository = "https://github.com/brunoczim/fslock"
-branch = "master"
 
 [target.'cfg(unix)'.dependencies.libc]
 version = "^0.2.66"
