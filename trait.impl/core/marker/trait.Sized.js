@@ -1,3 +1,3 @@
 (function() {var implementors = {
-"fslock":[["impl !<a class=\"trait\" href=\"https://doc.rust-lang.org/1.75.0/core/marker/trait.Sized.html\" title=\"trait core::marker::Sized\">Sized</a> for <a class=\"struct\" href=\"fslock/struct.OsStr.html\" title=\"struct fslock::OsStr\">OsStr</a>",1,["fslock::unix::OsStr"]]]
+"fslock_arti_fork":[["impl !<a class=\"trait\" href=\"https://doc.rust-lang.org/1.75.0/core/marker/trait.Sized.html\" title=\"trait core::marker::Sized\">Sized</a> for <a class=\"struct\" href=\"fslock_arti_fork/struct.OsStr.html\" title=\"struct fslock_arti_fork::OsStr\">OsStr</a>",1,["fslock_arti_fork::unix::OsStr"]]]
 };if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

@@ -1,1 +1,1 @@
-window.ALL_CRATES = ["fslock","libc"];
+window.ALL_CRATES = ["fslock_arti_fork","libc"];

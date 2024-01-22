@@ -1,0 +1,3 @@
+(function() {var implementors = {
+"fslock_arti_fork":[["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/1.75.0/std/os/fd/owned/trait.AsFd.html\" title=\"trait std::os::fd::owned::AsFd\">AsFd</a> for <a class=\"struct\" href=\"fslock_arti_fork/struct.LockFile.html\" title=\"struct fslock_arti_fork::LockFile\">LockFile</a>"]]
+};if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()
